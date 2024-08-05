@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     title: "Beyond Earth",
     thumbnail: {
@@ -455,3 +455,9 @@ export const data = [
     isTrending: false,
   },
 ];
+
+const movies = data.filter((movie) => {
+  return movie.category === "Movie";
+});
+
+console.log(movies);
